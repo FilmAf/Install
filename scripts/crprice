@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+echo "cruch.pl price.long.js >price.js 2>/dev/null"
+cruch.pl price.long.js >price.js 2>/dev/null

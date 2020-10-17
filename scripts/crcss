@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+echo "cruch.css.pl filmaf.long.css >filmaf.css 2>/dev/null"
+/home/dvdaf/scripts/cruch.css.pl filmaf.long.css >filmaf.css 2>/dev/null

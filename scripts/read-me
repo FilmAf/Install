@@ -1,0 +1,27 @@
+cpdvd                   - copies filmaf.long.js to filmaf.js without compressing it (for easier debugging)
+cpprice                 - copies price.long.js to price.js without compressing it (for easier debugging)
+crcss                   - copies filmaf.long.css to filmaf.css compressing it
+crdvd                   - copies filmaf.long.js search.long.js input.long.js to filmaf.js search.js input.js compressing them
+cron-daily              - jobs run daily as dvdaf
+cron-hourly             - jobs run hourly as dvdaf
+crprice                 - copies price.long.js to price.js compressing it
+cruch.css.pl            - compressor of css files
+cruch.pl                - compressor of js files
+export-sql.php          - utility to dump data of a select query
+min_all.php             - updates search_all_1 and search_all_2 for all listings (takes a long time, use if you need to rebuild the search optimization tables)
+read-me                 - this file
+show-env.php            - shows what the environemnt is for this server when PHP is called from the command line
+tar-all                 - creates a back up archive of the non-db/pic files in this server (edit this fiel to reflect your environment)
+
+
+Run daily by cron-daily:
+========================
+update-indexes-stats.php- updates search tables that may have not been updated due to a web connection being dropped or something
+normalize-film.php      - normalizes the values of ceratain fields for films (not dvd/bd) that may pass moderator review
+
+Run hourly by cron-hourly:
+==========================
+empty-trash.php         - empties filmaf user collection trash cans
+min-dir-stu.php         - updates the quick director and publisher lookup (not the iteractive search) - search_director, search_publisher
+min-title.php           - updates the quick title lookup (not the iteractive search) - search_dvd
+

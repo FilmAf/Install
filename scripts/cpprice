@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+echo "cp price.long.js price.js"
+cp price.long.js price.js

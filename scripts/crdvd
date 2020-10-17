@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+echo "cruch.pl filmaf.long.js >filmaf.js 2>/dev/null"
+cruch.pl filmaf.long.js >filmaf.js 2>/dev/null
+echo "cruch.pl search.long.js >search.js 2>/dev/null"
+cruch.pl search.long.js >search.js 2>/dev/null
+echo "cruch.pl input.long.js >input.js 2>/dev/null"
+cruch.pl input.long.js >input.js 2>/dev/null
+
+ls -l *.js

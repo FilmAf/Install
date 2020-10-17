@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+# -----------------------------------------------------------
+# Update cache for homepage
+# -----------------------------------------------------------
+
+cd /home/dvdaf/scripts
+#wget -q -O /dev/null http://www.filmaf.edu/?regen=regen
+/home/dvdaf/scripts/update-indexes-stats.php
+/home/dvdaf/scripts/normalize-film.php
+
+# -----------------------------------------------------------
+

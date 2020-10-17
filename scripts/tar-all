@@ -1,0 +1,40 @@
+#!/usr/bin/bash
+#
+# Must be run as root
+# Make sure sim is not running
+#
+
+if [ `whoami` != "root" ]; then
+    echo
+    echo ERROR: This script must run as root
+    echo
+else
+    # configuration files
+    /home/dvdaf/scripts/get-config-files
+    cd /home/dvdaf/backup
+    tar -cvzf /home/dvdaf/backup/filmaf-config.tar /home/dvdaf/install/config >> /dev/null 2>&1
+
+    # /home/dvdaf/scripts
+    tar -cvzf /home/dvdaf/backup/filmaf-scripts.tar /home/dvdaf/scripts >> /dev/null 2>&1
+
+    # /var/www/html
+    tar -cvzf /home/dvdaf/backup/filmaf-www-filmaf.tar /var/www/html --exclude /var/www/html/o0 --exclude /var/www/html/o1 --exclude /var/www/html/o2 --exclude /var/www/html/o3 --exclude /var/www/html/o4 --exclude /var/www/html/o5 --exclude /var/www/html/o6 --exclude /var/www/html/p0 --exclude /var/www/html/p1 --exclude /var/www/html/p2 --exclude /var/www/html/p3 --exclude /var/www/html/p4 --exclude /var/www/html/p5 --exclude /var/www/html/p6 --exclude /var/www/html/usr --exclude /var/www/html/uploads >> /dev/null 2>&1
+
+    # rename files
+    day=`date +%d`
+    if [ "$day" = 31 ]; then
+      let day=16
+    else
+      let day=(day-1)%15+1
+    fi
+    day=`printf "%02d" $day`
+
+    mv /home/dvdaf/backup/filmaf-config.tar "/home/dvdaf/backup/filmaf-config-$day.tar"
+    mv /home/dvdaf/backup/filmaf-scripts.tar "/home/dvdaf/backup/filmaf-scripts-$day.tar"
+    mv /home/dvdaf/backup/filmaf-www-filmaf.tar "/home/dvdaf/backup/filmaf-www-filmaf-$day.tar"
+    mv /home/dvdaf/backup/filmaf-www-filmaf-ssl.tar "/home/dvdaf/backup/filmaf-www-filmaf-ssl-$day.tar"
+
+    chown dvdaf.dvdaf /home/dvdaf/backup/*.tar
+    chmod 644 /home/dvdaf/backup/*.tar
+fi
+

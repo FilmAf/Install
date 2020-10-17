@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+echo "cp filmaf.long.js filmaf.js"
+cp filmaf.long.js filmaf.js
