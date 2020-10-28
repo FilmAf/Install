@@ -6,7 +6,7 @@ With over 300,000 titles Film Aficionado contains a large, extremely detailed an
 
 The archives needed for the installation of the site are being graciously hosted by <b>James Armes</b> – links below.  An extensive set of YouTube videos goes over the installation process, common operations, and pitfalls that you may encounter in the future.
 
-Whether you are a fellow film enthusiast or a Computer Science Major looking to take the site to the next level we wish you the best.
+Whether you are a fellow Film Enthusiast or a Computer Science Major looking to take the site to the next level we wish you the best.
 
 # Installation Notes
 https://github.com/FilmAf/Install/blob/main/Ubuntu-VM-Install-Notes-2020-10-24.rtf
