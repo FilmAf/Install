@@ -18,7 +18,7 @@ https://www.youtube.com/user/FilmAf
 https://filmaf-assets.s3.amazonaws.com/filmaf-db-2020-10-24.tar
 
 # Archives (166 GB)
-(Some are duplicative to the information in github)
+(Some are duplicative of the information in github)
 
 https://filmaf-assets.s3.amazonaws.com/filmaf-php-extensions.tar
 
