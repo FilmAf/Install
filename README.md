@@ -1,6 +1,6 @@
 # Intro
 
-Film Aficionado was a BluRay/DVD cataloging site where people tracked their film and TV show collections, became aware of new releases, and were able to find out what editions of a title were available in specific regions.  The site debuted in Dec 1999 and serviced over 100,000 collectors across the world.  In late 2020 the Film Aficionado ceased operations.
+Film Aficionado was a BluRay/DVD cataloging site where people tracked their film and TV show collections, became aware of new releases, and were able to find out what editions of a title were available in specific regions.  The site debuted in Dec 1999 and serviced over 100,000 collectors across the world.  In late 2020 Film Aficionado ceased operations.
 
 With over 300,000 titles Film Aficionado contains a large, extremely detailed and well curated BluRay/DVD database.  It represents the work of thousands of contributors over a span of over 20 years.  That database together with assets of the site are being made available under a public domain license (copyright of pictures of each of the titles is retained by the original copyright owners).
 
